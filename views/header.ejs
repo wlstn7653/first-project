@@ -28,6 +28,26 @@
       opacity: 0.5;
       z-index: -1;
     }
+
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700;900&display=swap');
+
+.font-noto-sans-kr {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.background-image::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('./images/bg.jpg');
+            background-size: cover;
+            opacity: 0.5; /* 배경 이미지의 투명도를 50%로 조정 */
+            z-index: -1;
+        }
+
   </style>
 </head>
 <body class="font-noto-sans-kr">
@@ -38,11 +58,10 @@
         <span class="ml-3 text-xl">모두의 견적서</span>
       </div>
       <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-        <a class="mr-5 hover:text-gray-100" href="company">회사소개</a>
-        <a class="mr-5 hover:text-gray-100" href="/">사용방법</a>
-        <a class="mr-5 hover:text-gray-100" href="inquiry">문의하기</a>
-        <a class="mr-5 hover:text-gray-100" href="pay">유료버전</a>
-        <a class="mr-5 hover:text-gray-100" href="notice">공지사항</a>
+        <a class="mr-10 hover:text-gray-100" href="/">사용방법</a>
+        <a class="mr-10 hover:text-gray-100" href="inquiry">문의하기</a>
+        <a class="mr-10 hover:text-gray-100" href="pay">유료버전</a>
+        <a class="mr-10 hover:text-gray-100" href="notice">공지사항</a>
       </nav>
       <button class="inline-flex items-center border-0 py-1 px-3 focus:outline-none hover:bg-gray-600 rounded text-base mt-4 md:mt-0 bg-white text-black">
         사용하기
