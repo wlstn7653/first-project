@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>모두의 견적서</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .text-table {
+      margin-top: 20px;
+    }
+    main {
+      padding-top: 20px;
+      padding-bottom: 200px;
+    }
+    .bg-image::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('./images/bg.png');
+      background-size: cover;
+      opacity: 0.5;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body class="font-noto-sans-kr">
+  <header class="text-white body-font bg-blue-600">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <div class="flex items-center justify-center p-4">
+        <img src="./images/logo..png" alt="KEYFRAME" class="w-20 h-20 p-2 bg-transparent rounded-full">
+        <span class="ml-3 text-xl">모두의 견적서</span>
+      </div>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-100" href="company">회사소개</a>
+        <a class="mr-5 hover:text-gray-100" href="/">사용방법</a>
+        <a class="mr-5 hover:text-gray-100" href="inquiry">문의하기</a>
+        <a class="mr-5 hover:text-gray-100" href="pay">유료버전</a>
+        <a class="mr-5 hover:text-gray-100" href="notice">공지사항</a>
+      </nav>
+      <button class="inline-flex items-center border-0 py-1 px-3 focus:outline-none hover:bg-gray-600 rounded text-base mt-4 md:mt-0 bg-white text-black">
+        사용하기
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+</head>
